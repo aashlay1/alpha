@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logistix</title>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/parallax.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Lobster|" rel="stylesheet">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <div id="logo">
+        <div id="align-left">
+
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="navbar">
+                <a href="./home.html" class="navbar">Home</a>
+            </li>
+            <li class="navbar">
+                <a href="#catalouge" class="navbar">About</a>
+            </li>
+            <li class="navbar">
+                <a href="./team.html" class="navbar" target="_blank">Team</a>
+            </li>
+            <li class="navbar">
+                <a href="./display.html" class="navbar">Track Asset</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="home-page">
+    <div class="conatiner">
+        <div id="home">
+            <div id="home-image">
+                <img src="./images/amsterdam-1150319_1920.jpg">
+                <svg viewBox="0 0 960 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">LogistiX</text>
+                    </symbol>
+
+                    <g class="g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+            </div>
+            <div class="center-text">
+                <h1><span class="spunkytext">Track any</span><span class="funkytext">where, an</span><span
+                        class="spunkytext">y time</span>
+                </h1>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="catalouge">
+    <div class="conatiner">
+
+        <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+            <h1><span class="spunkytext"> We are Logi</span><span class="funkytext">stiX</span></h1>
+        </div>
+
+        <div class="text-image-container">
+            <div class="image-container" id="scene">
+                <div class="layer" data-depth="1">
+                    <img src="./images/paris.png" data-aos="fade-up" data-aos-duration="1500">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="text">
+                    <p data-aos="fade-up" data-aos-duration="2000">We are LogistiX an asset tracking company that tracks
+                        different assets including containers, trucks, cranes, And maintenance items kept at various stocks.
+<br>Be ready to expereince the nest racking facility.Moreover, we provide on-demand service,and you can track the information anywehre, anytime.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="video-demo">
+    <div class="conatiner">
+        <div id="particles-js"></div>
+        <div id="triangle">
+        </div>
+
+        <div id="float-text">
+            <div id="center">
+                <div id="floatingtext" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="layer" data-depth="2"><span>TRACKING</span></h1>
+                </div>
+            </div>
+        </div>
+        <div id="video-container">
+            <div id="o">
+                <div id="video-box">
+                    <video loop id="video" autoplay>
+                        <source src="./images/banner2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="lower-triangle">
+        </div>
+    </div>
+
+</section>
+<script>
+    document.getElementById('video').play;
+</script>
+
+
+
+
+
+
+
+
+<script src="./js/main.js"></script>
+
+</body>
+
+
+<script>
+    AOS.init();
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+
+    var text = document.getElementById('floatingtext');
+    var parallex = new Parallax(text);
+
+
+    particlesJS.load('particles-js', './js/particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+
+
+</script>
+<script>
+
+    $(function(){
+        var navbar = $('.navbar');
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() <= 40){
+                navbar.removeClass('navbar-scroll');
+            } else {
+                navbar.addClass('navbar-scroll');
+            }
+        });
+    });
+
+</script>
+
+</html>
